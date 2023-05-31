@@ -62,34 +62,27 @@
 import React from 'react'
 import "./navbar.css"
 import { GiHamburgerMenu } from "react-icons/gi";
-import {FaTimes} from "react-icons/fa"
+import {FaTimes, FaHome, FaUserAlt} from "react-icons/fa"
+// import { Helmet } from 'react-helmet';
 
 
 const Navbar = () => {
-    let imageDesign = {
-        backgroundImage: 'url("pic5b.png")',
-        height: "40rem",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "right",
-        marginRight: "100px"
-        // backgroundSize: "50%",
-    }  
-
+    
   return (
     <div>
-        <div id="header" style={imageDesign}>
+        <div id="header" >
             <div class="container">
                 <nav>
                     <h1 className='logo' style={{width: "140px"}}>That<span>ITBabe.</span></h1>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                    <ul id='sidemenu'>
+                        <li><a href="#home"><FaHome/>Home</a></li>
+                        <li><a href="#about"><FaUserAlt/>About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <FaTimes style={{display: "none"}}/>
+                        <FaTimes className='res-nav' onClick={closemenu}/>
                     </ul>
-                    <GiHamburgerMenu style={{display: "none"}}/>
+                    <GiHamburgerMenu className='res-nav' onClick={openmenu}/>
                 </nav>
                 <div class="header-text" id='home'>
                     <p>SOFTWARE DEVELOPER</p>
@@ -110,23 +103,7 @@ const Navbar = () => {
                         During my learning, I sharpened my teamwork skill, communication skill, and my critical thinking abilities.
                         I'm open to all forms of collaboration which include working on projects with teams and also intense training.
                         </p>
-                        
-
                         <ul className='japa'>
-                            <li className='kinsley'>
-                                <p class="tab-links active-link">Skills</p>
-                                <div className="tab-contents active-tab" id='skills'>
-                                    <ul className='menumie'>
-                                        <li>
-                                            <span>Web Development</span>
-                                            <br />
-                                            {/* Web app development */}
-                                            {/* <img src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png" alt="" /> */}
-                                        </li>
-                                        <li><span>App Development</span><br />Building Android/iOS apps</li>
-                                    </ul>
-                                </div>
-                            </li>
                             <li className='kinsley'>
                                 <p class="tab-links active-link">Experience</p>
                                 <div className="tab-contents active-tab" id='experience'>
@@ -142,9 +119,8 @@ const Navbar = () => {
                                 <p class="tab-links active-link">Education</p>
                                 <div className="tab-contents active-tab" id='education'>
                                     <ul className='menumie'>
-                                        <li><span>2023</span><br />GoMyCode</li>
-                                        <li><span>2016</span><br />MBA from Leeds University</li>
-                                        <li><span>2014</span><br />BSc. from OAU</li>
+                                        <li><span>2023</span><br />GoMyCode<br/>Full Stack Web Development</li>
+                                        <li><span>2021</span><br />Obafemi Awolowo University<br />BSc. from OAU</li>
                                     </ul>
                                 </div>
                             </li>
@@ -153,6 +129,8 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
+
+        <script src="../addScript.js" type="text/javascript" />
     </div>
   )
 }

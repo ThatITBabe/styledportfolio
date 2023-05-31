@@ -3,9 +3,9 @@ import "./res.css"
 
 const res = () => {
   return (
-    <div>
-
-    </div>
+    <>
+      
+    </>
   )
 }
 

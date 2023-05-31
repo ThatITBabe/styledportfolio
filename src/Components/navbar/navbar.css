@@ -80,6 +80,7 @@ nav ul li a:hover::after {
 }
 .tab-links {
   margin-right: 50px;
+  margin-left: -20px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
@@ -87,17 +88,18 @@ nav ul li a:hover::after {
   /* margin-top: 50px; */
 }
 
-.tab-links::after {
+.kinsley p::after {
   content: "";
   width: 0;
   height: 3px;
+  /* background: #fff; */
   background: #ff004f;
   position: absolute;
   left: 0;
   bottom: -8px;
   transition: 0.5s;
 }
-.tab-links .active-link:hover:after{
+.kinsley p:hover:after{
     width: 50%;
 }
 .tab-contents ul li{
@@ -124,6 +126,7 @@ nav ul li a:hover::after {
   display: none;
   position: absolute;
   /* margin-top: 20px; */
+  margin-left: -50px;
 }
 
 .kinsley:hover .menumie {
@@ -134,7 +137,57 @@ nav ul li a:hover::after {
 
 
 
+#header{
+  background-image: url("../../asset/pic5b.png");
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 100px;
 
+  width: 100%;
+  /* height: 100vh; */
+  /* background-size: cover; */
+  /* background-position: center; */
+}
+
+.res-nav{
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+  .header-text{
+    margin-top: 100%;
+    font-size: 16px; 
+  }
+  .header-text h1{
+    font-size: 30px;
+  }
+  .res-nav{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul{
+    background-color: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul .res-nav{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+}
 
 
     

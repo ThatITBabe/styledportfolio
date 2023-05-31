@@ -1,8 +1,6 @@
 import React from 'react'
 import "./services.css"
-import { FaCode } from "react-icons/fa";
-import { FaCropAlt } from "react-icons/fa";
-import { FaAppStore } from "react-icons/fa";
+import { FaCode, FaDesktop, FaAppStore } from "react-icons/fa";
 
 const style = {
     fontSize: "50px",
@@ -18,20 +16,19 @@ const Services = () => {
                 <div>
                     <FaCode style={style}/>
                     <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nostrum commodi laudantium tenetur, at corporis rem.</p>
-                    <a href="#">Learn more</a>
+                    <p>Easy navigation and routing of web pages, interesting menu, functionality, great and appealing visual design, maximum effect, great, informative, easy to read and concise contents, web-friendly, Search Engine Optimization, proper engagement of visitors, accessible informaions, intuitive and interesting landing page, client generating websites</p>
                 </div>
                 <div>
-                    <FaCropAlt style={style}/>
-                    <h2>UI/UX</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nostrum commodi laudantium tenetur, at corporis rem.</p>
-                    <a href="#">Learn more</a>
+                    <FaDesktop style={style}/>
+                    <h2>Graphics Design</h2>
+                    <p>
+                      Touch of reality with images, the proper use of illustrations to visualize key information, image relevance to designs to convey the tight message and tone. Proper typography, fonts, thickness, size, weight and style. Proper use of color palette.
+                    </p>
                 </div>
                 <div>
                     <FaAppStore style={style}/>
                     <h2>App Development</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nostrum commodi laudantium tenetur, at corporis rem.</p>
-                    <a href="#">Learn more</a>
+                    <p>User seamless interaction with the app, great user interface that allows little effort to solve a problem, private and secure features to make user more comfortable, use of more personalize content for users, responsive and easy to use interface,  offline capabilities to ensure maximum usability of the app, feedback and review posting, simple alerts to be utilized and addressed by user, app data synchronization across several devices.</p>
                 </div>
             </div>
           </div>
