@@ -1,6 +1,9 @@
 #portfolio{
     padding: 50px 0;
+}
 
+#portfolio h1{
+    font-size: 60px;
 }
 
 .work-list{
@@ -76,10 +79,3 @@
     background: #ff004f;
 }
 
-/* #skills{
-    display: none;
-}
-
-#skills:hover{
-    display: block;
-} */

@@ -32,6 +32,9 @@ const Skills = () => {
                         <img src="node.png" style={style}/>
                     </div>
                     <div>
+                        <img src="express.png" style={style}/>
+                    </div>
+                    <div>
                         <img src="mongodb.png" style={style}/>
                     </div>
                 </div>

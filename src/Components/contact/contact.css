@@ -1,12 +1,17 @@
 .contact-left{
     flex-basis: 35%;
 }
+.contact-left h1{
+    font-size: 50px;
+}
+
 .contact-right{
     flex-basis: 60%;
 }
 .social-icons{
     margin-top: 30px;
-    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 .social-icons a{
     text-decoration: none;
@@ -43,4 +48,22 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -30px;
+    display: block;
+}
+
+@media only screen and (max-width: 600px){
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .social-icons{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
 }

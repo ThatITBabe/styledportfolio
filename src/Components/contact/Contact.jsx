@@ -12,6 +12,29 @@ import cv from '../../asset/New CV.pdf'
 
 
 const Contact = () => {
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwXra7rGGR5oEgsnqqfWopFb2oDGsFgeceSxkcnQ-SV60GAO9S8VMeg8BwYrf1BbA95/exec'
+
+    // const form = document.forms['submit-to-google-sheet']
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // form;
+        // const form = e.target;
+        const form = document.forms['submit-to-google-sheet']
+        // const scriptURL = 'your-script-url';
+        const msg = document.getElementById("msg")
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent successfully &#128077; &#x1F44D;"
+            setTimeout( () => {
+                msg.innerHTML = ""
+            }, 5000);
+            form.reset()
+            // console.log('Success!', response)
+          })
+          .catch((error) => console.error('Error!', error.message));
+      };
+
   return (
     <div id='contact'>
         <div className="container">
@@ -31,18 +54,16 @@ const Contact = () => {
                     <a href={cv} download className='btn btn2'>Download CV</a>
                 </div> 
                 <div className="contact-right">
-                    <form action="#">
+                    <form name='submit-to-google-sheet' onSubmit={handleSubmit}>
                         <input type="text" name="Name" id="" placeholder='Your Name' />
-                        <input type="email" name="email" id="" placeholder='Your Email' />
+                        <input type="email" name="Email" id="" placeholder='Your Email' />
                         <textarea name="Message" id="" rows="6" placeholder='Your Message'></textarea>
                         <button type="submit" className='btn btn2'>Submit</button>
                     </form>
+                    <span id='msg' ></span>
                 </div>
             </div>
         </div>
-    
-
-
     </div>
   )
 }

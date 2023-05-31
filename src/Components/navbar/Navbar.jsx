@@ -67,6 +67,17 @@ import {FaTimes, FaHome, FaUserAlt} from "react-icons/fa"
 
 
 const Navbar = () => {
+
+    const openMenu = () => {
+        const sidemenu = document.getElementById("sidemenu");
+        sidemenu.style.right = "0";
+      };
+    
+      const closeMenu = () => {
+        const sidemenu = document.getElementById("sidemenu");
+        sidemenu.style.right = "-200px";
+      };
+    
     
   return (
     <div>
@@ -75,14 +86,14 @@ const Navbar = () => {
                 <nav>
                     <h1 className='logo' style={{width: "140px"}}>That<span>ITBabe.</span></h1>
                     <ul id='sidemenu'>
-                        <li><a href="#home"><FaHome/>Home</a></li>
-                        <li><a href="#about"><FaUserAlt/>About</a></li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <FaTimes className='res-nav' onClick={closemenu}/>
+                        <FaTimes className='res-nav men2' onClick={closeMenu}/>
                     </ul>
-                    <GiHamburgerMenu className='res-nav' onClick={openmenu}/>
+                    <GiHamburgerMenu className='res-nav men' onClick={openMenu}/>
                 </nav>
                 <div class="header-text" id='home'>
                     <p>SOFTWARE DEVELOPER</p>
@@ -129,8 +140,6 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-
-        <script src="../addScript.js" type="text/javascript" />
     </div>
   )
 }
