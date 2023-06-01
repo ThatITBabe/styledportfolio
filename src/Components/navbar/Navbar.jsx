@@ -62,9 +62,7 @@
 import React from 'react'
 import "./navbar.css"
 import { GiHamburgerMenu } from "react-icons/gi";
-import {FaTimes, FaHome, FaUserAlt} from "react-icons/fa"
-// import { Helmet } from 'react-helmet';
-
+import {FaTimes} from "react-icons/fa"
 
 const Navbar = () => {
 

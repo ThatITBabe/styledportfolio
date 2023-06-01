@@ -50,10 +50,20 @@ form .btn2{
     cursor: pointer;
 }
 
-#msg{
-    color: #61b752;
-    margin-top: -30px;
+/* #msg{
+    color: #ff004f;
+    margin-top: -50px;
     display: block;
+    font-size: 30px;
+    text-align: center;
+} */
+
+.contact-right span{
+    /* color: #ff004f; */
+    font-size: 20px;
+    /* margin-bottom: 50px;  */
+    display: block;
+
 }
 
 @media only screen and (max-width: 600px){
