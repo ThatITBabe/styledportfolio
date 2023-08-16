@@ -8,10 +8,10 @@ nav{
   /* flex-basis: 100%; */
   flex-wrap: wrap;
   cursor: pointer;
-  position: fixed;
+  /* position: fixed; */
   /* position: sticky; */
   top: 0;
-  width: 70%;
+  width: 100%;
   z-index: 100;
 }
 nav span {

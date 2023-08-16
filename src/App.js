@@ -5,6 +5,7 @@ import Portfolio from './Components/portfolio/Portfolio'
 import Contact from './Components/contact/Contact'
 import Footer from './Components/footer/Footer'
 import Skills from './Components/skills/Skills'
+import ScrollToTop from './Components/scrollToTop/ScrollToTop'
 
 
 
@@ -16,7 +17,8 @@ const App = () => {
       <Services/>
       <Portfolio/>
       <Contact/>
-      <Footer/>
+      {/* <Footer/> */}
+      <ScrollToTop/>
     </div>
   )
 }

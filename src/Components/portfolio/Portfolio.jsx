@@ -37,7 +37,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-            <a href="#" className='btn'>See more</a>
+            <a href="https://github.com/ThatITBabe" className='btn'>See more</a>
         </div>
     </div>
   )
