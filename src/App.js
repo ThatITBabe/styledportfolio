@@ -17,7 +17,7 @@ const App = () => {
       <Services/>
       <Portfolio/>
       <Contact/>
-      {/* <Footer/> */}
+      <Footer/>
       <ScrollToTop/>
     </div>
   )
