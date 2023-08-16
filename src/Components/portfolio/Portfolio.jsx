@@ -3,7 +3,9 @@ import "./portfolio.css"
 import {FaExternalLinkAlt} from "react-icons/fa";
 import glovo from "../../asset/glovow.jpg"
 import calc from "../../asset/calculator.png"
-// import glovo from "../../asset/glovo2.png"
+import todo from "../../asset/tod.webp"
+
+
 const Portfolio = () => {
   return (
     <div id='portfolio'>
@@ -19,11 +21,11 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="work">
-                    <img src="phone4M.jpeg" alt="" />
+                    <img src={todo} alt="" />
                     <div className="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione maiores itaque iure adipisci. Voluptatum, exercitationem unde?</p>
-                        <a href="#"><FaExternalLinkAlt/></a>
+                        <h3>To-Do-List App</h3>
+                        <p>A to-do list is just a list of things you have to-do.</p>
+                        <a href="https://todolist-blue-six.vercel.app/"><FaExternalLinkAlt/></a>
                     </div>
                 </div>
                 <div className="work">
