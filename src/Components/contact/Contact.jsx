@@ -8,7 +8,7 @@ import { ImPhone} from "react-icons/im";
 import { BsMessenger} from "react-icons/bs";
 import { RiWhatsappFill} from "react-icons/ri";
 import "./contact.css"
-import cv from '../../asset/New CV.pdf'
+import cv from "../../asset/IT_CV.pdf"
 
 
 const Contact = () => {
@@ -45,7 +45,7 @@ const Contact = () => {
                         <a href="https://www.instagram.com/anu_oba/" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>
                         <a href="https://www.linkedin.com/in/obasanyaanuoluwapojanet/" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
                     </div>
-                    <a href={cv} download className='btn btn2'>Download CV</a>
+                    <a href= {cv} download className='btn btn2'>Download CV</a>
                 </div> 
                 <div className="contact-right">
                     <form name='submit-to-google-sheet' onSubmit={handleSubmit}>
